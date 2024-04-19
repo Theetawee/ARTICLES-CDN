@@ -1,0 +1,32 @@
+*{  font-family: "Open Sans", sans-serif !important;user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    
+}@tailwind base;@tailwind components;@tailwind utilities;
+.request_loader{
+        display:none;
+    }
+    .htmx-request .request_loader{
+        display:flex;
+    }
+    .htmx-request.request_loader{
+        display:flex;
+    }
+
+
+    *:disabled{
+      @apply cursor-not-allowed opacity-85;
+    }
+  
+
+    html {
+      overflow: scroll;
+      overflow-x: hidden;
+  }
+  ::-webkit-scrollbar {
+      width: 0;  /* Remove scrollbar space */
+      background: transparent;  /* Optional: just make scrollbar invisible */
+  }
+  /* Optional: show position indicator in red */
+  ::-webkit-scrollbar-thumb {
+      background: #FF0000;
+  }
